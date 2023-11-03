@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2 .part-number {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.items {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item {
+    margin: 8px;
+}
+
+.link-button {
+    border: 5px solid black;
+    width: calc(100% - 16px);
+    max-width: 500px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.link-button:hover:not(.inactive) {
+    background-color: #87997d;
+    color: white;
+}
+
+.spacer {
+    height: 24px;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-link .material-symbols-outlined {
+    margin-right: 5px;
+}
+
+.icon-link:hover {
+    color: #87997d;
+}
