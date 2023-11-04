@@ -10,39 +10,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="items">
-      <p class="item">
-        <img 
-          src="art.jpg" 
-          alt="Art of two girls in robes holding hands"
-          width="400"
-          height="718"
-        />
-      </p>
-      <h2 class="item">
-          <p><em>The Library of the Languages of God</em></p>
-          <p class="part-number">part 1 of 3</p>
-      </h2>
-      <a class="item link-button" href="#">download .pdf</a>
-      <a class="item link-button" href="#">download .mobi</a>
-      <a class="item link-button" href="#">download .epub</a>
-      <div class="item link-button inactive" href="#">audiobook coming soon!</div>
+    <div id="secret-links" class="hide">
+      <div class="items">
+        <p class="item">
+          <img 
+            src="art.jpg" 
+            alt="Art of two girls in robes holding hands"
+            width="400"
+            height="718"
+          />
+        </p>
+        <h2 class="item">
+            <p><em>The Library of the Languages of God</em></p>
+            <p class="part-number">part 1 of 3</p>
+        </h2>
+        <a class="item link-button" href="#">download .pdf</a>
+        <a class="item link-button" href="#">download .mobi</a>
+        <a class="item link-button" href="#">download .epub</a>
+        <div class="item link-button inactive" href="#">audiobook coming soon!</div>
 
-      <div class="spacer"></div>
+        <div class="spacer"></div>
 
-      <a class="item icon-link" href="mailto:rania.orr.rania@gmail.com">
-        <span class="material-symbols-outlined">mail</span>contact me
-      </a>
-      <p class="item">
-        join my mailing list (maybe someday I'll send it an email?!)
-      </p>
-      <a class="item icon-link" href="https://ko-fi.com/raniaorr">
-        <span class="material-symbols-outlined">coffee</span>tip jar
-      </a>
+        <a class="item icon-link" href="mailto:rania.orr.rania@gmail.com">
+          <span class="material-symbols-outlined">mail</span>contact me
+        </a>
+        <p class="item">
+          join my mailing list (maybe someday I'll send it an email?!)
+        </p>
+        <a class="item icon-link" href="https://ko-fi.com/raniaorr">
+          <span class="material-symbols-outlined">coffee</span>tip jar
+        </a>
 
-      <div class="spacer"></div>
-      
-      <p class="item thank-you">♥ thank you so much for supporting me!</p>
+        <div class="spacer"></div>
+        
+        <p class="item thank-you">♥ thank you so much for supporting me!</p>
+      </div>
     </div>
     <script>
       /*
@@ -52,7 +54,9 @@
        * 
        * (kudos to you for looking at the source code!)
        */
-      if (location.search !== "?pwd=cactus-magic") {
+      if (location.search === "?pwd=cactus-magic") {
+        document.getElementById("secret-links").classList.remove("hide");
+      } else {
         window.location.replace("about.html");
       }
     </script>

@@ -13,6 +13,10 @@ a {
     color: black;
 }
 
+.hide {
+    display: none;
+}
+
 h2 {
     font-size: 30px;
 }
