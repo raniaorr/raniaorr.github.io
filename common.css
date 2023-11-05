@@ -1,0 +1,46 @@
+:root {
+    --contrast-color: #87997d;
+}
+
+body {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.items {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item {
+    margin: 8px 16px;
+}
+
+.spacer {
+    height: 24px;
+}
+
+.center-in-screen {
+    width: 100%;
+    height: 100vh;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-link .material-symbols-outlined {
+    margin-right: 5px;
+}
