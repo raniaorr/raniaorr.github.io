@@ -44,3 +44,18 @@ a {
 .icon-link .material-symbols-outlined {
     margin-right: 5px;
 }
+
+/* MailerLite embed */
+.ml-form-embedBody.ml-form-embedBodyHorizontal.row-form {
+    padding-top: 0px !important;
+}
+
+.ml-form-formContent.horozintalForm {
+    padding-bottom: 8px !important;
+}
+
+.ml-form-successContent p {
+    font-family: "EB Garamond", serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
