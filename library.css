@@ -1,0 +1,74 @@
+.hide {
+    display: none;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h1 .part-number {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.two-col-break {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* = margin-top - h2 margin-top */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.link-button {
+    border: 5px solid black;
+    width: calc(100% - 58px); /* = margin + border + padding */
+    max-width: 500px;
+    padding: 8px;
+}
+
+.link-button:hover:not(.inactive) {
+    background-color: var(--contrast-color);
+    color: white;
+}
+
+.icon-link:hover {
+    color: var(--contrast-color);
+}
+
+/* Breakpoints meant to always keep margins left/right of at least 20px */
+@media screen and (max-width: 540px) {
+    #art {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #art {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #art {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #art {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #art {
+        width: 200px;
+    }
+}
